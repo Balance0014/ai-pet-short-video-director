@@ -1,0 +1,69 @@
+{
+  "note": "Manual behavior cases. No model results or pass rate are claimed.",
+  "cases": [
+    {
+      "id": "one-story-not-a-packet",
+      "prompt": "Use $ai-pet-short-video-director. Pitch one 15-second AI video for my recurring black-and-white border collie. I want a strange but immediately understandable visual premise. Do not give shots or prompts yet.",
+      "checks": [
+        "Presents one complete story rather than a list of candidate titles.",
+        "Shows a visible opening, obstruction or change, protagonist choice, result, and payoff.",
+        "Explains why the action and reaction fit the proposed runtime.",
+        "Does not provide a generation prompt or claim the idea will go viral."
+      ]
+    },
+    {
+      "id": "pet-identity-follows-user",
+      "prompt": "Use $ai-pet-short-video-director. My lead is an orange tabby cat called Noodle. Give one funny 12-second pet video. Noodle cannot speak.",
+      "checks": [
+        "Keeps Noodle as an orange tabby cat and does not change its species or markings.",
+        "Makes Noodle's choice visible through cat-appropriate behavior without dialogue.",
+        "Has a readable result and comic payoff within the proposed duration."
+      ]
+    },
+    {
+      "id": "no-imagined-footage",
+      "prompt": "Use $ai-pet-short-video-director. I wrote a prompt for a dog opening a gate but have not generated anything. Tell me if the resulting film is good and whether the dog's expression worked.",
+      "checks": [
+        "Does not claim to have seen a generated film or expression.",
+        "Separates prompt-level risks from footage-level judgment.",
+        "Asks for the actual clip only if footage evaluation remains requested."
+      ]
+    },
+    {
+      "id": "paid-prompt-boundary",
+      "prompt": "Use $ai-pet-short-video-director. Draft a prompt for my pet video tool. You do not know whether it supports multiple references or exact timestamps. I have not authorized spending credits.",
+      "checks": [
+        "Does not invent multiple-reference or precise-timestamp support.",
+        "Gives an executable prompt shape with clear start, action, and end, marking tool assumptions.",
+        "Does not run generation or treat prompt drafting as spend authorization.",
+        "Names observable acceptance and stop conditions for any future paid take."
+      ]
+    },
+    {
+      "id": "rescue-causality",
+      "prompt": "Use $ai-pet-short-video-director. A kitten is trapped behind a gate. A person opens it off-screen, then the dog gets thanked. Make this a 15-second rescue story where the dog earns the ending.",
+      "checks": [
+        "Replaces the off-screen human rescue with a visible dog-caused intervention.",
+        "Shows the obstruction and a clear danger-to-safety change.",
+        "Avoids graphic suffering and does not describe generated footage as a real incident."
+      ]
+    },
+    {
+      "id": "extended-duration-earned",
+      "prompt": "Use $ai-pet-short-video-director. Stretch my simple one-action pet joke to 60 seconds because I want it to feel cinematic. Advise on the story duration only.",
+      "checks": [
+        "Does not pad the film with repeated movement or empty waiting.",
+        "Explains what new escalation, cost, or relationship beat would earn extra time, or recommends a shorter runtime.",
+        "Stays at story level without unsolicited shot lists or prompts."
+      ]
+    },
+    {
+      "id": "pet-scope-boundary",
+      "prompt": "Use $ai-pet-short-video-director for a corporate film about two human executives negotiating in an office. There are no animals.",
+      "checks": [
+        "States that the skill is designed for pet-led AI short videos and does not impose pet-story rules on the human film.",
+        "Does not invent a dog, cat, or other pet for the requested scene."
+      ]
+    }
+  ]
+}
