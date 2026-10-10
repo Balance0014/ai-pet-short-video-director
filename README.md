@@ -48,6 +48,8 @@ The skill also supports direct requests to diagnose a script, plan a shot, rewri
 
 Run `python3 scripts/check_package.py` from the repository root. It checks the package structure, linked local files, and portability hazards. It does **not** measure story quality or prove a video model will follow a prompt.
 
+GitHub Actions runs this package check and the receipt validator's self-test on every push and pull request. A green check confirms package integrity, not directing quality.
+
 For a substantial paid prompt, `python3 scripts/validate_receipt.py --self-test` checks the validator itself; `python3 scripts/validate_receipt.py path/to/receipt.json` checks one real project receipt. A passing receipt confirms fields, files, and hashes, not creative quality or generation success.
 
 The cases in [`evals/cases.json`](evals/cases.json) are prompts and observable expectations. Run each in a fresh agent session with the skill installed, keep the full response, and grade the listed expectations. No model pass rate is claimed here. Real audience claims require real published videos with comparable observation times.
