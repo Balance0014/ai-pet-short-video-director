@@ -1,6 +1,6 @@
 # AI Pet Short Video Director
 
-**A director and producer skill for cute-pet AI short videos.** It takes a recurring pet IP from a visible story idea through animal blocking, generation planning, real-footage review, editing, and learning from results.
+**A director and producer agent skill for cute-pet AI short videos.** It takes a recurring pet IP from a visible story idea through animal blocking, generation planning, real-footage review, editing, and learning from results. It's for creators running a series about a cat, dog, or other companion animal, not for unrelated shorts about people or general film projects.
 
 **AI 萌宠短视频导演／制片 Skill。** 从能看懂的故事、动物表演和镜头设计出发，控制付费生成的风险，再用真实素材决定剪辑、返工或止损。适用于猫、狗及其他伴侣动物的系列短视频；不面向无关的人物短片或通用电影项目。
 
