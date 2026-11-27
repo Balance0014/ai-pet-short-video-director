@@ -23,7 +23,14 @@ It is an original skill by [Balance Zhao](https://x.com/balance0014). The public
 npx skills add Balance0014/ai-pet-short-video-director
 ```
 
-Or copy or clone this repository into your AI agent's skills directory under the folder name `ai-pet-short-video-director`, then reload the agent. The required entry is [`SKILL.md`](SKILL.md). All references use relative paths; no database, paid account, or local project layout is required.
+In Claude Code, it also installs as a plugin:
+
+```text
+/plugin marketplace add Balance0014/ai-pet-short-video-director
+/plugin install ai-pet-short-video-director@ai-pet-short-video-director
+```
+
+Or copy the [`plugin/skills/ai-pet-short-video-director`](plugin/skills/ai-pet-short-video-director) folder into your AI agent's skills directory and reload the agent. The entry point is [`SKILL.md`](plugin/skills/ai-pet-short-video-director/SKILL.md). All references use relative paths; no database, paid account, or local project layout is required.
 
 Example prompt / 使用示例：
 
@@ -37,22 +44,27 @@ The skill also supports direct requests to diagnose a script, plan a shot, rewri
 
 ## Structure / 结构
 
+The Claude plugin is the [`plugin/`](plugin) folder. It holds only Markdown, JSON, and an icon, and runs no code. The skill's files are in `plugin/skills/ai-pet-short-video-director/`, shortened to `…/` below.
+
 | File | Purpose |
 |---|---|
-| [`SKILL.md`](SKILL.md) | Entry point, routing, shared directing rules and boundaries |
-| [`references/story.md`](references/story.md) | Premise, visible causality, duration and story greenlight |
-| [`references/direction.md`](references/direction.md) | Blocking, coverage, keyframes, continuity and sound |
-| [`references/generation.md`](references/generation.md) | Tool controls, references, prompt forms and paid-step checks |
-| [`references/review.md`](references/review.md) | Real footage, edit, release review and measured learning |
-| [`references/receipt.md`](references/receipt.md) | Optional paid-generation evidence receipt |
-| [`examples/cat-shares-warm-mat.md`](examples/cat-shares-warm-mat.md) | Hypothetical end-to-end decision example |
+| [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) | Lets Claude Code install the plugin from this repository |
+| [`plugin/.claude-plugin/plugin.json`](plugin/.claude-plugin/plugin.json) | Plugin manifest: name, version, license, icon |
+| [`plugin/README.md`](plugin/README.md) | Plugin README for the directory listing, including its data statement |
+| [`…/SKILL.md`](plugin/skills/ai-pet-short-video-director/SKILL.md) | Entry point, routing, shared directing rules and boundaries |
+| [`…/references/story.md`](plugin/skills/ai-pet-short-video-director/references/story.md) | Premise, visible causality, duration and story greenlight |
+| [`…/references/direction.md`](plugin/skills/ai-pet-short-video-director/references/direction.md) | Blocking, coverage, keyframes, continuity and sound |
+| [`…/references/generation.md`](plugin/skills/ai-pet-short-video-director/references/generation.md) | Tool controls, references, prompt forms and paid-step checks |
+| [`…/references/review.md`](plugin/skills/ai-pet-short-video-director/references/review.md) | Real footage, edit, release review and measured learning |
+| [`…/references/receipt.md`](plugin/skills/ai-pet-short-video-director/references/receipt.md) | Optional paid-generation evidence receipt |
+| [`…/examples/cat-shares-warm-mat.md`](plugin/skills/ai-pet-short-video-director/examples/cat-shares-warm-mat.md) | Hypothetical end-to-end decision example |
 | [`evals/cases.json`](evals/cases.json) | Behavior cases for a fresh-session manual evaluation |
 | [`scripts/check_package.py`](scripts/check_package.py) | Local package integrity check |
 | [`scripts/validate_receipt.py`](scripts/validate_receipt.py) | Validate one paid-prompt receipt and its evidence hashes |
 
 ## What “validated” means / 验证边界
 
-Run `python3 scripts/check_package.py` from the repository root. It checks the package structure, linked local files, and portability hazards. It does **not** measure story quality or prove a video model will follow a prompt.
+Run `python3 scripts/check_package.py` from the repository root. It checks the package structure, the plugin manifests, linked local files, portability hazards, and that the plugin folder holds no executable code. It does **not** measure story quality or prove a video model will follow a prompt.
 
 GitHub Actions runs this package check and the receipt validator's self-test on every push and pull request. A green check confirms package integrity, not directing quality.
 

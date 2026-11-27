@@ -1,0 +1,19 @@
+{
+  "name": "ai-pet-short-video-director",
+  "owner": {
+    "name": "Balance Zhao"
+  },
+  "metadata": {
+    "description": "A director and producer skill for AI short videos that star a recurring pet.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ai-pet-short-video-director",
+      "source": "./plugin",
+      "description": "Plan a pet video's story, blocking, shots, and generation prompts before you spend credits, then judge the real footage.",
+      "category": "creative",
+      "tags": ["pet", "ai-video", "storyboard"]
+    }
+  ]
+}

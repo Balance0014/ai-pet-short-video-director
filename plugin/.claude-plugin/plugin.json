@@ -1,0 +1,17 @@
+{
+  "name": "ai-pet-short-video-director",
+  "displayName": "AI Pet Short Video Director",
+  "version": "1.0.0",
+  "description": "Direct AI short videos that star a recurring pet: a story the viewer can see, animal blocking and shots, one prompt per generation with accept and stop rules, and decisions based on the real footage.",
+  "author": {
+    "name": "Balance Zhao",
+    "url": "https://x.com/balance0014"
+  },
+  "homepage": "https://github.com/Balance0014/ai-pet-short-video-director",
+  "repository": "https://github.com/Balance0014/ai-pet-short-video-director",
+  "documentationUrl": "https://github.com/Balance0014/ai-pet-short-video-director#readme",
+  "supportUrl": "https://github.com/Balance0014/ai-pet-short-video-director/issues",
+  "license": "MIT",
+  "keywords": ["pet", "ai-video", "short-video", "storyboard", "video-prompts", "creators"],
+  "icon": "./icon.png"
+}

@@ -52,7 +52,7 @@ The profile changes beat density and coverage, not the character's identity. Nev
 
 Treat credit-consuming image or video generation as a production decision. Before asking the user to generate, provide a single intended prompt, exact reference roles, observable first-take acceptance checks, and a stop condition. If a take fails, classify the cause and try the cheapest change that can actually fix it. Do not prescribe repeated paid attempts as exploration.
 
-For a substantial paid unit, use the portable [production receipt](references/receipt.md) and run its validator when a local receipt file is available. The validator checks evidence and internal consistency, not creative truth. For a simple draft or a user who does not want a file, apply the same decisions in conversation without inventing a receipt or adding unnecessary ceremony.
+For a substantial paid unit, use the portable [production receipt](references/receipt.md) and run its validator when both the script and a local receipt file are available. The validator checks evidence and internal consistency, not creative truth. For a simple draft or a user who does not want a file, apply the same decisions in conversation without inventing a receipt or adding unnecessary ceremony.
 
 Planning or writing a prompt does not authorize spending credits, changing accounts, publishing, or contacting anyone. Ask for authorization at the point of those actions unless the user already gave it. Never present generated fiction as documentary footage of a real rescue or injury.
 

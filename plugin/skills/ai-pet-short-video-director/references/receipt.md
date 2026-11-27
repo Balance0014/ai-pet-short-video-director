@@ -1,6 +1,6 @@
 # Optional paid-generation receipt
 
-Use this for a substantial paid generation where reproducibility and a clear stop decision matter. Save a JSON file within the user's project, never inside this skill. Run `python3 scripts/validate_receipt.py path/to/receipt.json` from the skill repository or invoke the script by its path.
+Use this for a substantial paid generation where reproducibility and a clear stop decision matter. Save a JSON file within the user's project, never inside this skill. The validator script ships with the [source repository](https://github.com/Balance0014/ai-pet-short-video-director), not with the installed skill. If the user has a checkout, run `python3 scripts/validate_receipt.py path/to/receipt.json` from its root; otherwise, apply the same checks by hand.
 
 The receipt is evidence of preparation, not a certificate that a model will obey. A script cannot verify artistic taste or whether `inspected: true` is honest. The producer must inspect each referenced image or clip and record the exact risk relevant to the unit.
 
