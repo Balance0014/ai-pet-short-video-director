@@ -13,11 +13,15 @@ An AI video prompt can be grammatically correct and still produce an unreadable 
 3. What is the smallest generation unit the chosen tool can execute clearly?
 4. What observable result would make the first take usable or trigger a stop?
 
-It is an original skill by **Balance0014**. The public package contains no private character bible, account data, project ledger, or current production state. Its examples are hypothetical teaching material, not claimed production results.
+It is an original skill by [Balance Zhao](https://x.com/balance0014). The public package contains no private character bible, account data, project ledger, or current production state. Its examples are hypothetical teaching material, not claimed production results.
 
 ## Install / 安装
 
-Copy or clone this repository into your AI agent's skills directory under the folder name `ai-pet-short-video-director`, then reload the agent. The required entry is [`SKILL.md`](SKILL.md). All references use relative paths; no database, paid account, or local project layout is required.
+```bash
+npx skills add Balance0014/ai-pet-short-video-director
+```
+
+Or copy or clone this repository into your AI agent's skills directory under the folder name `ai-pet-short-video-director`, then reload the agent. The required entry is [`SKILL.md`](SKILL.md). All references use relative paths; no database, paid account, or local project layout is required.
 
 Example prompt / 使用示例：
 
