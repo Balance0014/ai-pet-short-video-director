@@ -4,6 +4,8 @@
 
 **AI 萌宠短视频导演／制片 Skill。** 从能看懂的故事、动物表演和镜头设计出发，控制付费生成的风险，再用真实素材决定剪辑、返工或止损。适用于猫、狗及其他伴侣动物的系列短视频；不面向无关的人物短片或通用电影项目。
 
+![Worked example: a one-line idea becomes a story, a four-shot plan, and accept and stop rules before any paid generation](docs/demo.svg)
+
 ## Why it exists / 为什么做
 
 An AI video prompt can be grammatically correct and still produce an unreadable film. This skill asks the director to settle four questions before spending credits:
