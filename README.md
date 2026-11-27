@@ -1,4 +1,4 @@
-# AI Pet Short Video Director
+# AI Pet Short Video Director: an AI pet video storyboard skill
 
 **A director and producer agent skill for cute-pet AI short videos.** It takes a recurring pet IP from a visible story idea through animal blocking, generation planning, real-footage review, editing, and learning from results. It's for creators running a series about a cat, dog, or other companion animal, not for unrelated shorts about people or general film projects.
 
@@ -79,10 +79,36 @@ The cases in [`evals/cases.json`](evals/cases.json) are prompts and observable e
 - It does not present synthetic rescue or injury footage as a real event.
 - It can learn from filmmakers' methods without reproducing their protected shots, dialogue, characters, or plots.
 
+## FAQ
+
+**How do I make AI pet videos people can follow?**  
+Settle the story before the prompt. The skill asks four questions before you spend credits: what visibly changes and why the pet causes it, where the pet, camera and props start and end, what the smallest unit your video tool can render clearly is, and what result would make the first take usable or tell you to stop. Then it turns the approved story into a shot plan and a generation prompt.
+
+**Does it write prompts for AI cat and dog videos?**  
+Yes, after the story is approved: a shot plan and a generation prompt for the tool you name, with what each reference image controls and how to judge the first take. It works for cats, dogs and other companion animals in a recurring series.
+
+**Which AI video generators does it work with?**  
+It isn't tied to one. You name the tool, and the generation guide covers tool controls, reference images and prompt forms in general terms. Check your tool's current limits yourself.
+
+**Does it generate or post the video?**  
+No. It plans, prompts and reviews footage you bring back. It never runs a paid generation or publishes a video from a request for a plan.
+
+**Which agents can use it?**  
+Claude Code (as a plugin), and other agents that read `SKILL.md` folders, through `npx skills add`. The plugin is Markdown, JSON and an icon, and runs no code.
+
 ## License
 
 Copyright (c) 2026 Balance0014. Released under the [MIT License](LICENSE).
 
 ---
 
-**More from [Balance Zhao](https://github.com/Balance0014):** [Post-quantum blockchain map](https://github.com/Balance0014/post-quantum-blockchains) (open for submissions) · [claim-check](https://github.com/Balance0014/claude-code-claim-check) · [when-to-clear](https://github.com/Balance0014/claude-code-when-to-clear) · [one-person-ai-company](https://github.com/Balance0014/one-person-ai-company) · [telegram-rug-checker](https://github.com/Balance0014/telegram-rug-checker)
+<!-- more-from:start -->
+## More from Balance Zhao
+
+Open-source tools by [Balance Zhao](https://github.com/Balance0014), an AI and crypto creator who researches post-quantum blockchains. New tools are posted on [X @balance0014](https://x.com/balance0014).
+
+- **Crypto research:** [Post-quantum blockchain map](https://github.com/Balance0014/post-quantum-blockchains) · [Rug-pull and honeypot checker bot for Telegram](https://github.com/Balance0014/telegram-rug-checker) · [Bitcoin and economic cycle dashboard](https://github.com/Balance0014/cycle-board-public)
+- **Claude Code and AI agents:** [Claude Code Stop hook that checks "done" claims](https://github.com/Balance0014/claude-code-claim-check) · [Claude Code token usage report and /clear reminder](https://github.com/Balance0014/claude-code-when-to-clear) · [One-person AI company playbook](https://github.com/Balance0014/one-person-ai-company)
+- **AI video and content:** [Explainer video skill for coding agents](https://github.com/Balance0014/source-to-explainer-video) · **AI pet video storyboard skill** (this repo) · [Translate English videos to Chinese subtitles](https://github.com/Balance0014/video-translation-x-post) · [Trending GitHub projects to X posts](https://github.com/Balance0014/github-to-x-posts)
+- **Finding users:** [Reddit lead finder Chrome extension](https://github.com/Balance0014/reddit-lead-finder)
+<!-- more-from:end -->
