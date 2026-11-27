@@ -64,3 +64,7 @@ The cases in [`evals/cases.json`](evals/cases.json) are prompts and observable e
 ## License
 
 Copyright (c) 2026 Balance0014. Released under the [MIT License](LICENSE).
+
+---
+
+**More from [Balance Zhao](https://github.com/Balance0014):** [Post-quantum blockchain map](https://github.com/Balance0014/post-quantum-blockchains) (open for submissions) · [claim-check](https://github.com/Balance0014/claude-code-claim-check) · [when-to-clear](https://github.com/Balance0014/claude-code-when-to-clear) · [one-person-ai-company](https://github.com/Balance0014/one-person-ai-company) · [telegram-rug-checker](https://github.com/Balance0014/telegram-rug-checker)
